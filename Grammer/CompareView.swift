@@ -12,10 +12,14 @@ struct CompareView: View {
     @State var comparators: Int = 1
     
     var body: some View {
-        List {
-            ForEach(0 ..< comparators) { comparator in
-                RowView()
+        NavigationView {
+            List {
+                ForEach(0 ..< comparators) { comparator in
+                    RowView()
+                }
             }
+            .navigationTitle("Compare Items")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
