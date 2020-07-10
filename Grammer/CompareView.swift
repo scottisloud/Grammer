@@ -9,17 +9,24 @@ import SwiftUI
 
 struct CompareView: View {
     
-    @State var comparators: Int = 1
+    @State var comparators: Int = 2
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(0 ..< comparators) { comparator in
-                    RowView()
+                    RowView(itemPrice: "", itemSize: "", multiplier: 1)
                 }
             }
             .navigationTitle("Compare Items")
             .navigationBarTitleDisplayMode(.inline)
+//            .navigationBarItems(trailing:
+//                                    Button(action: {
+//                                        self.comparators += 1
+//                                        print("Add")
+//                                    }, label: {
+//                                        Image(systemName: "plus")
+//                                    }))
         }
     }
 }

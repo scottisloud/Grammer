@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    static var numberOfItems: Int = 5
+    static var numberOfItems: Int = CompareView().comparators
     
     var body: some View {
         TabView {
