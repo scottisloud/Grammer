@@ -9,11 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    static var numberOfItems: Int = CompareView().comparators
-    
     var body: some View {
         TabView {
-            CompareView(comparators: Self.numberOfItems)
+            CompareView()
                 .tabItem {
                     Image(systemName: "arrow.right.arrow.left.square.fill")
                     Text("Compare")

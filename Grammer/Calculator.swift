@@ -8,7 +8,9 @@
 import Foundation
 
 
-func unitCalculator(itemPrice: Double, itemSize: Double, multiplier: Int) -> Double {
+func unitCalculator(itemPrice: String, itemSize: String, multiplier: Int) -> Double {
+    
+    guard let itemPrice = Double(itemPrice), let itemSize = Double(itemSize) else { return 0.00 }
     
     switch multiplier {
     case 1:
@@ -17,5 +19,5 @@ func unitCalculator(itemPrice: Double, itemSize: Double, multiplier: Int) -> Dou
         return (itemPrice/itemSize) * 100
     default:
         return (itemPrice/itemSize)
-    }
+    }    
 }

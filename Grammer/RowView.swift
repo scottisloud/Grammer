@@ -17,33 +17,36 @@ struct RowView: View {
     var body: some View {
         VStack {
             HStack {
-                
-                    VStack {
-                        Text("Item Price")
-                        TextField("Price", text: $itemPrice)
-                            .font(.title3)
-                            .multilineTextAlignment(.center)
-                    }
-                    VStack {
-                        Text("Item Size")
-                        TextField("Item Size", text: $itemSize)
-                            .font(.title3)
-                            .multilineTextAlignment(.center)
-                    }
+                VStack {
+                    Text("Item Price")
+                    TextField("Price", text: $itemPrice)
+                        .font(.title2)
+                        .multilineTextAlignment(.center)
+                        .keyboardType(.numbersAndPunctuation)
+                }
+                VStack {
+                    Text("Item Size")
+                    TextField("Item Size", text: $itemSize)
+                        .font(.title2)
+                        .multilineTextAlignment(.center)
+                        .keyboardType(.numbersAndPunctuation)
+                }
             }
             VStack {
                 Text("Unit Price").font(.title2)
                 
-                    Text("$0.056")
-                        .font(.title).fontWeight(.black)
-                    Picker("Multiplier", selection: $multiplier) {
-                        ForEach(0 ..< Self.multipliers.count) {
-                            Text("x\(Self.multipliers[$0])")
-                        }
+                Text("$0.056")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                Picker("Multiplier", selection: $multiplier) {
+                    ForEach(0 ..< Self.multipliers.count) {
+                        Text("x\(Self.multipliers[$0])")
                     }
-                    .pickerStyle(SegmentedPickerStyle()).fixedSize()
+                }
+                .pickerStyle(SegmentedPickerStyle()).fixedSize()
             }
         }
+        .padding(.vertical, 10)
     }
 }
 
