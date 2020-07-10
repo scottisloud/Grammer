@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AppView.swift
 //  Grammer
 //
 //  Created by Scott Lougheed on 2020/07/9.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AppView: View {
     
     var body: some View {
         TabView {
@@ -25,10 +25,9 @@ struct ContentView: View {
         }
     }
     
-    
-    struct ContentView_Previews: PreviewProvider {
+    struct AppView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            AppView()
         }
     }
 }

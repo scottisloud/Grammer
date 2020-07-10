@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2304149124B7BF9900995BE7 /* GrammerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2304149024B7BF9900995BE7 /* GrammerApp.swift */; };
-		2304149324B7BF9900995BE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2304149224B7BF9900995BE7 /* ContentView.swift */; };
+		2304149324B7BF9900995BE7 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2304149224B7BF9900995BE7 /* AppView.swift */; };
 		2304149524B7BF9B00995BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2304149424B7BF9B00995BE7 /* Assets.xcassets */; };
 		2304149824B7BF9B00995BE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2304149724B7BF9B00995BE7 /* Preview Assets.xcassets */; };
 		230414A024B7C06300995BE7 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2304149F24B7C06300995BE7 /* Calculator.swift */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		2304148D24B7BF9900995BE7 /* Grammer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grammer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2304149024B7BF9900995BE7 /* GrammerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammerApp.swift; sourceTree = "<group>"; };
-		2304149224B7BF9900995BE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2304149224B7BF9900995BE7 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		2304149424B7BF9B00995BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2304149724B7BF9B00995BE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2304149924B7BF9B00995BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				2304149024B7BF9900995BE7 /* GrammerApp.swift */,
-				2304149224B7BF9900995BE7 /* ContentView.swift */,
+				2304149224B7BF9900995BE7 /* AppView.swift */,
 				230414A524B7CD8100995BE7 /* CompareView.swift */,
 				230414A124B7C46200995BE7 /* RowView.swift */,
 				230414A324B7CC0000995BE7 /* SettingsView.swift */,
@@ -151,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				230414A424B7CC0000995BE7 /* SettingsView.swift in Sources */,
-				2304149324B7BF9900995BE7 /* ContentView.swift in Sources */,
+				2304149324B7BF9900995BE7 /* AppView.swift in Sources */,
 				230414A624B7CD8100995BE7 /* CompareView.swift in Sources */,
 				2304149124B7BF9900995BE7 /* GrammerApp.swift in Sources */,
 				230414A024B7C06300995BE7 /* Calculator.swift in Sources */,

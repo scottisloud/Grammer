@@ -22,14 +22,14 @@ struct RowView: View {
                     TextField("Price", text: $itemPrice)
                         .font(.title2)
                         .multilineTextAlignment(.center)
-                        .keyboardType(.numbersAndPunctuation)
+                        .keyboardType(.numberPad)
                 }
                 VStack {
                     Text("Item Size")
                     TextField("Item Size", text: $itemSize)
                         .font(.title2)
                         .multilineTextAlignment(.center)
-                        .keyboardType(.numbersAndPunctuation)
+                        .keyboardType(.numberPad)
                 }
             }
             VStack {
@@ -47,6 +47,7 @@ struct RowView: View {
             }
         }
         .padding(.vertical, 10)
+        .accentColor(.orange)
     }
 }
 

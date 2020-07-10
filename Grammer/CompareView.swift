@@ -28,8 +28,6 @@ struct CompareView: View {
     }
 }
 
-
-
 struct CompareView_Previews: PreviewProvider {
     static var previews: some View {
         CompareView()
