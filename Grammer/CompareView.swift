@@ -12,12 +12,12 @@ import SwiftUI
 
 struct CompareView: View {
     
-    @State private var comparators: [RowView] = [RowView(itemPrice: "", itemSize: "", multiplier: 1), RowView(itemPrice: "", itemSize: "", multiplier: 1)]
+    @State private var items: Int = 1
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(0 ..< comparators.count) { comparator in
+                ForEach(0 ... items, id: \.self) { comparator in
                     RowView(itemPrice: "", itemSize: "", multiplier: 1)
                 }
                 .onDelete { indexSet in
@@ -26,20 +26,20 @@ struct CompareView: View {
             }
             .navigationBarTitle("Compare Items", displayMode: .inline)
             .navigationBarItems(trailing:
-                                    HStack {
-                                        Button(action: {
-                                            self.comparators.append(RowView(itemPrice: "", itemSize: "", multiplier: 1))
-                                            print("Add")
-                                        }, label: {
-                                            Image(systemName: "plus")
-                                        })
-                                    }
+                HStack {
+                    Button(action: {
+                        self.items += 1
+                        print("Add")
+                    }, label: {
+                        Image(systemName: "plus")
+                    })
+                }
             )
         }
     }
     
     func deleteRow(offests: IndexSet) {
-        comparators.remove(atOffsets: offests)
+        self.items -= 1
     }
 }
 
