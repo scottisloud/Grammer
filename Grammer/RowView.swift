@@ -23,6 +23,7 @@ struct RowView: View {
                 VStack {
                     Text("Item Price")
                     TextField("Price", text: $itemPrice)
+                    TextField("Item Price", text: $itemPrice)
                         .font(.title2)
                         .multilineTextAlignment(.center)
                         .keyboardType(.decimalPad)
