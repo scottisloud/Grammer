@@ -11,7 +11,7 @@ struct RowView: View {
     @State var itemPrice: String
     @State var itemSize: String
     @State var multiplier: Int
-    
+        
     var unitPrice: Float {
         unitCalculator(itemPrice: self.itemPrice, itemSize: self.itemSize, multiplier: self.multiplier)
     }
@@ -26,14 +26,14 @@ struct RowView: View {
                 VStack {
                     Text("Item Price")
                     TextField("Item Price", text: $itemPrice)
-                        .font(.largeTitle)
+                        .font(.title)
                         .multilineTextAlignment(.center)
                         .keyboardType(.decimalPad)
                 }
                 VStack {
                     Text("Item Size")
                     TextField("Item Size", text: $itemSize)
-                        .font(.largeTitle)
+                        .font(.title)
                         .multilineTextAlignment(.center)
                         .keyboardType(.decimalPad)
                 }
@@ -41,7 +41,7 @@ struct RowView: View {
             VStack {
                 Text("Unit Price").font(.largeTitle)
                 Text(String(format: "$%.4f", unitPrice))
-                    .font(.largeTitle)
+                    .font(.title)
                     .fontWeight(.black)
                 
                 Picker("Multiplier", selection: $multiplier) {

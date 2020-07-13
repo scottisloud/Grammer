@@ -24,8 +24,7 @@ struct CompareView: View {
                     self.deleteRow(offests: indexSet)
                 }
             }
-            .navigationBarTitle("Compare Items")
-            
+            .navigationBarTitle("Compare Items", displayMode: .inline)
             .navigationBarItems(trailing:
                                     HStack {
                                         Button(action: {
