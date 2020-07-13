@@ -26,20 +26,20 @@ struct RowView: View {
                 VStack {
                     Text("Item Price")
                     TextField("Item Price", text: $itemPrice)
-                        .font(.title2)
+                        .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .keyboardType(.decimalPad)
                 }
                 VStack {
                     Text("Item Size")
                     TextField("Item Size", text: $itemSize)
-                        .font(.title2)
+                        .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .keyboardType(.decimalPad)
                 }
             }
             VStack {
-                Text("Unit Price").font(.title2)
+                Text("Unit Price").font(.largeTitle)
                 Text(String(format: "$%.4f", unitPrice))
                     .font(.largeTitle)
                     .fontWeight(.black)

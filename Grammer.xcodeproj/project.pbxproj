@@ -15,6 +15,9 @@
 		230414A224B7C46200995BE7 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230414A124B7C46200995BE7 /* RowView.swift */; };
 		230414A424B7CC0000995BE7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230414A324B7CC0000995BE7 /* SettingsView.swift */; };
 		230414A624B7CD8100995BE7 /* CompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230414A524B7CD8100995BE7 /* CompareView.swift */; };
+		23A8776B24BCBDBA00DF259B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23A8776A24BCBDBA00DF259B /* Default-568h@2x.png */; };
+		23A8778D24BCBEFB00DF259B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A8778C24BCBEFB00DF259B /* AppDelegate.swift */; };
+		23A8778F24BCBF5600DF259B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A8778E24BCBF5600DF259B /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		230414A124B7C46200995BE7 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		230414A324B7CC0000995BE7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		230414A524B7CD8100995BE7 /* CompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
+		23A8776A24BCBDBA00DF259B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		23A8778C24BCBEFB00DF259B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23A8778E24BCBF5600DF259B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 		2304148424B7BF9900995BE7 = {
 			isa = PBXGroup;
 			children = (
+				23A8776A24BCBDBA00DF259B /* Default-568h@2x.png */,
 				2304148F24B7BF9900995BE7 /* Grammer */,
 				2304148E24B7BF9900995BE7 /* Products */,
 			);
@@ -61,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				2304149024B7BF9900995BE7 /* GrammerApp.swift */,
+				23A8778C24BCBEFB00DF259B /* AppDelegate.swift */,
+				23A8778E24BCBF5600DF259B /* SceneDelegate.swift */,
 				2304149224B7BF9900995BE7 /* AppView.swift */,
 				230414A524B7CD8100995BE7 /* CompareView.swift */,
 				230414A124B7C46200995BE7 /* RowView.swift */,
@@ -140,6 +149,7 @@
 			files = (
 				2304149824B7BF9B00995BE7 /* Preview Assets.xcassets in Resources */,
 				2304149524B7BF9B00995BE7 /* Assets.xcassets in Resources */,
+				23A8776B24BCBDBA00DF259B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +164,10 @@
 				2304149324B7BF9900995BE7 /* AppView.swift in Sources */,
 				230414A624B7CD8100995BE7 /* CompareView.swift in Sources */,
 				2304149124B7BF9900995BE7 /* GrammerApp.swift in Sources */,
+				23A8778D24BCBEFB00DF259B /* AppDelegate.swift in Sources */,
 				230414A024B7C06300995BE7 /* Calculator.swift in Sources */,
 				230414A224B7C46200995BE7 /* RowView.swift in Sources */,
+				23A8778F24BCBF5600DF259B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +300,7 @@
 				DEVELOPMENT_TEAM = T879Q2BE7Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Grammer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = scottlougheed.Grammer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +322,7 @@
 				DEVELOPMENT_TEAM = T879Q2BE7Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Grammer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = scottlougheed.Grammer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

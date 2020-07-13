@@ -21,15 +21,15 @@ struct CompareView: View {
                     RowView(itemPrice: "", itemSize: "", multiplier: 1)
                 }
                 .onDelete { indexSet in
-                    deleteRow(offests: indexSet)
+                    self.deleteRow(offests: indexSet)
                 }
             }
-            .navigationTitle("Compare Items")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitle("Compare Items")
+            
             .navigationBarItems(trailing:
                                     HStack {
                                         Button(action: {
-                                            comparators.append(RowView(itemPrice: "", itemSize: "", multiplier: 1))
+                                            self.comparators.append(RowView(itemPrice: "", itemSize: "", multiplier: 1))
                                             print("Add")
                                         }, label: {
                                             Image(systemName: "plus")
