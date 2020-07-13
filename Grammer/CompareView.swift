@@ -13,6 +13,7 @@ import SwiftUI
 struct CompareView: View {
     
     @State private var items: Int = 1
+    @State private var keyboardHeight: CGFloat = 0
     
     var body: some View {
         NavigationView {
@@ -23,6 +24,9 @@ struct CompareView: View {
                 .onDelete { indexSet in
                     self.deleteRow(offests: indexSet)
                 }
+            }
+            .onTapGesture {
+                UIApplication.shared.endEditing()
             }
             .navigationBarTitle("Compare Items", displayMode: .inline)
             .navigationBarItems(trailing:
@@ -38,14 +42,20 @@ struct CompareView: View {
         }
     }
     
-    func deleteRow(offests: IndexSet) {
+    private func deleteRow(offests: IndexSet) {
         if self.items != 0 {
             self.items -= 1
         }
-        
     }
 }
 
+// MARK: - Extentions
+// Creates an endEditing method that can be called against UIApplication.shared to resign first responder status and dismiss a keyboard. Particularly helpful on a .onTapGesture() view modifier.
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
 
 struct CompareView_Previews: PreviewProvider {
     static var previews: some View {

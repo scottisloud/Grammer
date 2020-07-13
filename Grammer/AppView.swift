@@ -20,7 +20,6 @@ struct AppView: View {
                 .tabItem {
                     Image(systemName: "slider.horizontal.3")
                     Text("Settings")
-                    
                 }
         }
     }

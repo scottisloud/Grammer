@@ -16,8 +16,6 @@ struct RowView: View {
         unitCalculator(itemPrice: self.itemPrice, itemSize: self.itemSize, multiplier: self.multiplier)
     }
     
-    
-    
     static let multipliers = [1, 10, 100]
     
     var body: some View {
