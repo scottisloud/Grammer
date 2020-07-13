@@ -39,7 +39,10 @@ struct CompareView: View {
     }
     
     func deleteRow(offests: IndexSet) {
-        self.items -= 1
+        if self.items != 0 {
+            self.items -= 1
+        }
+        
     }
 }
 
