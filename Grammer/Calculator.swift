@@ -8,9 +8,9 @@
 import Foundation
 
 
-func unitCalculator(itemPrice: String, itemSize: String, multiplier: Int) -> Double {
+func unitCalculator(itemPrice: String, itemSize: String, multiplier: Int) -> Float {
     
-    guard let itemPrice = Double(itemPrice), let itemSize = Double(itemSize) else { return 0.00 }
+    guard let itemPrice = Float(itemPrice), let itemSize = Float(itemSize) else { return 0.00 }
     
     switch multiplier {
     case 0:

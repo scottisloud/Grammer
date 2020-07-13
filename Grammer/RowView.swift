@@ -10,11 +10,14 @@ import SwiftUI
 struct RowView: View {
     @State var itemPrice: String
     @State var itemSize: String
-    @State var multiplier: Int = 0
+    @State var multiplier: Int
     
-    var unitPrice: Double {
+    var unitPrice: Float {
         unitCalculator(itemPrice: self.itemPrice, itemSize: self.itemSize, multiplier: self.multiplier)
     }
+    
+    
+    
     static let multipliers = [1, 10, 100]
     
     var body: some View {
@@ -37,15 +40,19 @@ struct RowView: View {
             }
             VStack {
                 Text("Unit Price").font(.title2)
-                Text("$\(unitPrice)")
+                Text(String(format: "$%.4f", unitPrice))
                     .font(.largeTitle)
                     .fontWeight(.black)
+                
                 Picker("Multiplier", selection: $multiplier) {
                     ForEach(0 ..< Self.multipliers.count) {
                         Text("x\(Self.multipliers[$0])")
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle()).fixedSize()
+                Text("Multiplier")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
             }
         }
         .padding(.vertical, 10)
