@@ -10,7 +10,8 @@ import SwiftUI
 struct RowView: View {
     @State var itemPrice: String
     @State var itemSize: String
-    @State var multiplier: Int
+//    var defaults = UserDefaults.standard
+    @State var multiplier = UserDefaults.standard.integer(forKey: "Multiplier")
         
     var unitPrice: Float {
         unitCalculator(itemPrice: self.itemPrice, itemSize: self.itemSize, multiplier: self.multiplier)
